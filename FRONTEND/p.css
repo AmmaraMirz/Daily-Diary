@@ -1,0 +1,320 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Color Palette */
+:root {
+    --color-bg: #00000099;       /* Dark Background */
+    --color-navbar: #6e3086;   /* Navbar Background */
+    --color-text: #ffffff;     /* Text Color */
+    --color-hover: #E36B5D;    /* Hover Effect */
+    --color-accent: #B9415A;   /* Accent Color */
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+/* Navbar Styling */
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-navbar);
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: var(--color-hover);
+    color: var(--color-bg);
+}
+
+/* Main Section Styling */
+section {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 20px;
+    color: var(--color-text);
+}
+
+/* Welcome Box Styling */
+.welcome-box {
+    background-color: var(--color-accent);
+    color: var(--color-text);
+    padding: 50px;
+    margin: 50px auto;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-box h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.welcome-box p {
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+body {
+    background-image: url('02.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;}
+
+/* Calendar Section */
+.calendar-section {
+    background-color: #030001af;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.calendar-section h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Calendar Box */
+.calendar-box {
+    background-color: #7f558b;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Month Navigation */
+.month-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.nav-button {
+    background-color: #583068;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #7f558b;
+}
+
+.month-year-display {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Calendar Grid */
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    justify-items: center;
+    padding: 10px;
+}
+
+/* Day of the Week Styling */
+#calendar .day {
+    font-weight: bold;
+    background-color: #583068;
+    color: #fff;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Date Styling */
+#calendar .date {
+    background-color: #76478a;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#calendar .date:hover {
+    background-color: #8b6d9c;
+    transform: scale(1.1);
+}
+
+/* Active Date Styling */
+#calendar .date.active {
+    background-color: #F6AA5F;
+    font-weight: bold;
+}
+
+#calendar div {
+    padding: 5px;
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: #16213e;
+    color: #ffffff;
+    padding: 40px 0;
+}
+footer .container {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+footer .container div {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px 35px;
+}
+footer h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+footer p, footer a {
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    line-height: 1.6;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+footer .social-icons a {
+    margin-right: 15px;
+    color: #ffffff;
+    font-size: 18px;
+}
+footer .social-icons a:hover {
+    color: #f1c40f;
+}
+footer .copyright {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #2c3e50;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+/* Media Query for Tablets (768px and above) */
+@media (min-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    .welcome-section h2 {
+        font-size: 2rem;
+    }
+
+    .calendar-box {
+        grid-template-columns: repeat(7, 1fr);
+    }
+}
+/* Media Query for Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .welcome-section {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .welcome-box h2 {
+        font-size: 1.5rem;
+    }
+
+    .welcome-box p {
+        font-size: 1rem;
+    }
+
+    .calendar-box {
+        font-size: 0.9rem;
+    }
+
+    footer .container {
+        display: block;
+        text-align: center;
+    }
+
+    footer div {
+        margin-bottom: 20px;
+    }
+
+    .social-icons a {
+        margin: 0 5px;
+    }
+}

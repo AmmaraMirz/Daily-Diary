@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Care Tracker</title>
+    <link rel="stylesheet" href="selfCare.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Track Your Self-Care</h1>
+    </header>
+
+    <!-- Self-Care Tracker Section -->
+    <section id="selfCareSection" class="self-care-section">
+        <div class="self-care-box">
+            <div class="tracker-item">
+                <h2>Hours of Sleep</h2>
+                <input type="number" id="sleepHours" placeholder="Enter hours" min="0" max="24">
+            </div>
+            <div class="tracker-item">
+                <h2>Water Balance</h2>
+                <input type="number" id="waterIntake" placeholder="Enter water intake (ml)" min="0">
+            </div>
+            <div class="tracker-item">
+                <h2>Mood</h2>
+                <select id="moodSelect">
+                    <option value="happy">Happy</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="sad">Sad</option>
+                    <option value="angry">Angry</option>
+                    <option value="excited">Excited</option>
+                </select>
+            </div>
+            <div class="tracker-item">
+                <h2>Workout</h2>
+                <input type="text" id="workout" placeholder="Enter workout details">
+            </div>
+        </div>
+
+        <button id="saveButton">Save Today’s Self-Care</button>
+    </section>
+
+  
+
+    <script src="selfCare.js"></script>
+</body>
+</html>

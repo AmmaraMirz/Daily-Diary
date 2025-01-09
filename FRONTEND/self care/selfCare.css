@@ -1,0 +1,92 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    background-image: url('asthetic\ wallpaper.jpeg'); /* Set your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Header Styles */
+header {
+    background-color: #D3C8E3; /* Light lavender background */
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 5px 5px;
+    width: 800px;
+    height: auto;
+    margin-left: 550px;
+}
+
+/* Self-Care Tracker Section */
+.self-care-section {
+    margin: 50px auto;
+    padding: 30px;
+    max-width: 800px;
+    background-color: #E3D6F4; /* Light purple with a subtle hint of pink */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.self-care-box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.tracker-item {
+    background-color: #B3D7F1; /* Light blue background */
+    color: #4A6F91; /* Soft dark blue text */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input, select {
+    width: 96%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #E3D6F4; /* Soft dark blue border */
+    margin-top: 10px;
+}
+
+button {
+    background-color: #F1B6D7; /* Soft pink button */
+    color: rgb(0, 0, 0);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #F1A0C1; /* Slightly darker pink on hover */
+}
+.mood-item {
+    background-color: #fff; /* Soft pink mood item */
+    color: #F1A0C1; /* Dark blue text */
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.mood-item:hover {
+    background-color: #F1A0C1; /* Slightly darker pink for hover */
+    color: #1B2A41; /* Darker text for better contrast on hover */
+}

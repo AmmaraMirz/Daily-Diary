@@ -1,0 +1,143 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff; /* White background */
+  color: #19285F; /* Deep text color */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+  background-image: url(02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Form Wrapper */
+.form-wrapper {
+  background: linear-gradient(135deg, #F6AA5F, #E36B5D, #B9415A, #19285F, #583068);
+  border-radius: 10px;
+  padding: 25px 35px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px;
+  opacity: 0;
+  animation: slideIn 1s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Form Header */
+.form-wrapper h1 {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+/* Input Groups */
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: bold;
+  color: #19285F;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #B9415A;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #19285F;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #F6AA5F;
+  transform: scale(1.05); /* Slight scaling effect */
+}
+
+/* Eye Icon */
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #19285F;
+  transition: color 0.3s ease;
+}
+
+.eye-icon.active {
+  color: #B9415A;
+}
+
+/* Button */
+button {
+  background-color: #B9415A;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #E36B5D;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Links */
+a {
+  color: #19285F;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #F6AA5F;
+  text-decoration: underline;
+}
+/* Eye Icon Styling */
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #19285F; /* Matches palette */
+  transition: color 0.3s ease;
+}
+
+.eye-icon.active {
+  color: #B9415A; /* Highlighted color when active */
+}
